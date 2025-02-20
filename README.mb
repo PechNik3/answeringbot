@@ -33,13 +33,14 @@
     pip install -r requirements.txt
     ```
 
-3. Настройте подключение к базе данных в файле `config.py`. Пример конфигурации:
+3. Настройте подключение к базе данных и боту в файле `config.py`. Пример конфигурации:
 
     ```python
+    TOKEN = "YOUR_BOT_TOKEN"
     DB_CONFIG = {
         "dbname": "answering_bot_db",
         "user": "postgres",
-        "password": "yourpassword",
+        "password": "your_password",
         "host": "localhost", # 'db', если использовать Docker
     }
     ```
@@ -53,9 +54,10 @@
 ## Docker
 
 Если вы хотите использовать Docker для развертывания:
-        ```bash
-    docker-compose up --build
-    ```
+
+```bash
+docker-compose up --build
+```
 
 ### Описание функционала
 
