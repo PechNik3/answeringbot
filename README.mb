@@ -59,7 +59,7 @@
     pip install -r requirements.txt
     ```
 
-4. **Настройте подключение к базе данных** в файле `config.py`:
+4. **Настройте подключение к базе данных и боту** в файле `config.py`:
 
     ```python
     TOKEN = "YOUR_BOT_TOKEN"
